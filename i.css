@@ -1,0 +1,345 @@
+     * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn {
+            background: none;
+            font-weight: medium;
+            font-size: 24px;
+            border: none;
+            color: #ffffff;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: color 0.3s ease;
+        }
+
+        .btn:hover {
+            color: #cccccc;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 4rem 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-content p {
+            color: #999999;
+            font-size: 1.125rem;
+            max-width: 28rem;
+        }
+
+        .hero-mockup {
+            display: flex;
+            justify-content: center;
+        }
+
+        .mockup-container {
+            width: 320px;
+            height: 256px;
+            background: linear-gradient(135deg, #9333ea, #7c3aed);
+            border-radius: 1rem;
+            padding: 1.5rem;
+        }
+
+        .mockup-interface {
+            background-color: #374151;
+            border-radius: 0.5rem;
+            height: 100%;
+            padding: 1rem;
+        }
+
+        .mockup-line {
+            background-color: #4b5563;
+            height: 1rem;
+            border-radius: 0.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .mockup-line:nth-child(1) { width: 75%; }
+        .mockup-line:nth-child(2) { width: 50%; }
+        .mockup-line:nth-child(3) { width: 66%; }
+
+        .mockup-cards {
+            margin-top: 1rem;
+        }
+
+        .mockup-card {
+            background-color: #6b7280;
+            height: 4rem;
+            border-radius: 0.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Features Section */
+        .features {
+            background-color: #111111;
+            padding: 4rem 1.5rem;
+        }
+
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .features-label {
+            color: #999999;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+        }
+
+        .features h2 {
+            font-size: 2.25rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .features-description {
+            color: #999999;
+            font-size: 1.125rem;
+            max-width: 32rem;
+            margin: 0 auto 4rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .feature-card {
+            text-align: center;
+        }
+
+        .feature-icon {
+            width: 4rem;
+            height: 4rem;
+            background-color: #374151;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            position: relative;
+        }
+
+        /* Simple CSS icons */
+        .icon-edit::after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            border: 2px solid #ffffff;
+            border-radius: 2px;
+            position: relative;
+        }
+
+        .icon-edit::before {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 2px;
+            background-color: #ffffff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        .icon-folder::after {
+            content: '';
+            width: 18px;
+            height: 14px;
+            border: 2px solid #ffffff;
+            border-radius: 2px;
+            position: relative;
+        }
+
+        .icon-folder::before {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 2px;
+            background-color: #ffffff;
+            top: 20%;
+            left: 25%;
+        }
+
+        .icon-shield::after {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 16px solid #ffffff;
+            position: relative;
+        }
+
+        .feature-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card p {
+            color: #999999;
+        }
+
+        /* CTA Section */
+        .cta {
+            padding: 4rem 1.5rem;
+            text-align: center;
+        }
+
+        .cta-container {
+            max-width: 64rem;
+            margin: 0 auto;
+        }
+
+        .cta h2 {
+            font-size: 2.25rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .cta-subtitle {
+            color: #999999;
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn-primary {
+            background-color: #ffffff;
+            color: #000000;
+            border: none;
+            padding: 0.75rem 2rem;
+            font-size: 1.125rem;
+            border-radius: 0.375rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #e5e5e5;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 2rem 1.5rem;
+            border-top: 1px solid #374151;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer p {
+            color: #6b7280;
+            font-size: 0.875rem;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 768px) {
+            .features-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 3rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .header {
+                padding: 1rem 2rem;
+            }
+
+            .hero {
+                padding: 6rem 2rem;
+                grid-template-columns: 1fr 1fr;
+                gap: 3rem;
+            }
+
+            .hero-content h1 {
+                font-size: 3.75rem;
+            }
+
+            .hero-mockup {
+                justify-content: flex-end;
+            }
+
+            .features {
+                padding: 6rem 2rem;
+            }
+
+            .features h2 {
+                font-size: 2.5rem;
+            }
+
+            .cta {
+                padding: 6rem 2rem;
+            }
+
+            .cta h2 {
+                font-size: 2.5rem;
+            }
+
+            .footer {
+                padding: 2rem;
+            }
+        }
+
+        .btn-primary {
+  display: inline-block;
+  padding: 10px 24px;
+  background: #158BDA;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.btn-primary:hover {
+  background: #00AF26;
+}
